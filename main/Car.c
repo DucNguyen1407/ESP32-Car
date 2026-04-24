@@ -39,19 +39,19 @@ void motor_task(void *arg)
         {
         case 'F':
             motor_forward(&motor_left, pwm);
-            motor_forward(&motor_right, pwm);
+            motor_backward(&motor_right, pwm);
             break;
         case 'B':
             motor_backward(&motor_left, pwm);
-            motor_backward(&motor_right, pwm);
+            motor_forward(&motor_right, pwm);
             break;
         case 'L':
             motor_forward(&motor_left, pwm / 4);
-            motor_forward(&motor_right, pwm);
+            motor_backward(&motor_right, pwm);
             break;
         case 'R':
             motor_forward(&motor_left, pwm);
-            motor_forward(&motor_right, pwm / 4);
+            motor_backward(&motor_right, pwm / 4);
             break;
         case 'S':                           
             motor_stop(&motor_left);
