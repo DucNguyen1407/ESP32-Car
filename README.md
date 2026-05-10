@@ -7,7 +7,7 @@ A two-wheel RC car built on the **ESP32** microcontroller, controlled in real ti
 ## Overview
 
 ```
-┌─────────────────────┐        Bluetooth SPP        ┌──────────────────────┐
+┌─────────────────────┐        Bluetooth SPP         ┌──────────────────────┐
 │   Web Controller    │ ◄──────────────────────────► │    ESP32 Firmware    │
 │   (index.html)      │     Commands: F/B/L/R/S/1-9  │   Motor + BT Stack   │
 └─────────────────────┘                              └──────────────────────┘
@@ -32,23 +32,6 @@ A two-wheel RC car built on the **ESP32** microcontroller, controlled in real ti
 
 ---
 
-## Repository Structure
-
-```
-ESP32-Car/
-├── main/
-│   └── main.c              # App entry point, BT SPP init, motor task
-├── components/
-│   ├── motor/
-│   │   ├── motor.h         # Motor API & struct definition
-│   │   └── motor.c         # PWM (LEDC) + GPIO motor driver
-├── web/
-│   └── index.html          # Browser controller (Web Serial API)
-├── CMakeLists.txt
-└── README.md
-```
-
----
 
 ## Hardware
 
@@ -174,8 +157,4 @@ The UI shows:
 - Web Serial API requires a Chromium-based browser
 - One client connection at a time (SPP slave mode)
 
----
 
-## License
-
-MIT License. Free to use and modify for personal and educational projects.
