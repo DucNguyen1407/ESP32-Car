@@ -157,4 +157,5 @@ The UI shows:
 - Web Serial API requires a Chromium-based browser
 - One client connection at a time (SPP slave mode)
 
-
+## Contribution
+Contributions are welcome! Please feel free to submit issues or pull requests.
