@@ -1,4 +1,4 @@
-# ESP32 Car — Bluetooth-Controlled RC Car
+# Remote Controlled Car
 
 A two-wheel RC car built on the **ESP32** microcontroller, controlled in real time via **Classic Bluetooth (SPP)** from a browser-based web interface using the **Web Serial API**.
 
