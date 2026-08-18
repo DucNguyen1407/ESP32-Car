@@ -11,11 +11,11 @@ A two-wheel RC car built on the **ESP32** microcontroller, controlled in real ti
 │   Web Controller    │ ◄──────────────────────────► │    ESP32 Firmware    │
 │   (index.html)      │     Commands: F/B/L/R/S/1-9  │   Motor + BT Stack   │
 └─────────────────────┘                              └──────────────────────┘
-                                                              │
-                                                    ┌─────────┴─────────┐
-                                                    │   L298N / Motor   │
-                                                    │  Driver + 2x DC   │
-                                                    └───────────────────┘
+                                                                │
+                                                      ┌─────────┴─────────┐
+                                                      │   L298N / Motor   │
+                                                      │  Driver + 2x DC   │
+                                                      └───────────────────┘
 ```
 
 ---
@@ -158,4 +158,5 @@ The UI shows:
 - One client connection at a time (SPP slave mode)
 
 ## Contribution
-Contributions are welcome! Please feel free to submit issues or pull requests.
+
+*Contributions are welcome! Please feel free to submit issues or pull requests.*
